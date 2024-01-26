@@ -4,10 +4,11 @@ video {
     height: auto;
     margin: 0 auto;
     display: block;
-    max-width: $content-width;
+    max-width: 100%;
     padding: 0;
     border: 0;
     border-radius: 0;
     box-shadow: none;
     background-color: transparent;
+    margin-bottom: 15px;
 }
