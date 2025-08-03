@@ -6,7 +6,7 @@ theme: jekyll-theme-chirpy
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: en
+lang: zh-CN
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Asia/Shanghai
@@ -14,32 +14,30 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: HHHHao-s # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: 曾荣豪博客 # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  记录学习笔记，各种日记
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://hhhhao-s.github.io"
 
 github:
-  username: github_username # change to your GitHub username
+  username: hhhhao-s # change to your GitHub username
 
-twitter:
-  username: twitter_username # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: 曾荣豪
+  email: 2755942193@qq.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    # - https://twitter.com/hhhhao # change to your Twitter homepage
+    - https://github.com/hhhhao-s # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -88,17 +86,17 @@ pageviews:
 #     light — Use the light color scheme
 #     dark — Use the dark color scheme
 #
-theme_mode: # [light | dark]
+theme_mode: dark # [light | dark]
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: "https://chirpy-img.netlify.app"
+cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/commons/avatar.jpg"
+avatar:
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -170,6 +168,8 @@ collections:
   tabs:
     output: true
     sort_by: order
+  traing:
+    output: true
 
 defaults:
   - scope:
@@ -192,6 +192,12 @@ defaults:
     values:
       layout: page
       permalink: /:title/
+  - scope:
+      path: ""
+      type: trading
+    values:
+      layout: page
+      permalink: /trading/:title/
 
 sass:
   style: compressed
